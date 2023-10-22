@@ -1,0 +1,242 @@
+body{
+    background-color: black;
+    color: #ffffff;
+    font-family: 'Lucida-Handwriting', cursive;
+    font-style: initial;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.space{
+    margin-bottom: 900px;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(50px);
+    transition: all 1s;
+}
+
+.mySlides {
+
+    border-radius: 20px #dfef00;
+    padding: 6px;
+    width: 1600px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+
+}
+.font{
+    font-size: 1000px;
+    font-weight: 900;
+}
+.set {
+    border: 2px solid #d4ff00;
+    background-color: black;
+    font-size: large;
+    color: #dfef00;
+    width: auto;
+    padding: auto;
+    text-align: center;
+    margin: center;
+    transition-duration: .1s;
+}
+.set:hover{
+    cursor: pointer;
+    background-color: #d4ff00;
+    color: black;
+    transition-duration: 1s;
+
+}
+.set:active {
+    transform: translateY(-5%);
+    content: attr(set2);
+}
+.no {
+    opacity: 0;
+    transition-duration: .7s;
+}
+
+.set:hover + .no{
+    opacity: 1;
+    color: red;
+}
+.wrapper{
+    position: fixed;
+
+  }
+.topnav {
+    position: relative;
+    overflow: visible;
+    background-color: gray;
+    z-index: 99;
+}
+.active{
+    color: antiquewhite;
+    background-color: rgba(72, 0, 255, 0);
+}
+.topnav a{
+    position: relative;
+    overflow: visible;
+    z-index: 99;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    background-color: #ccff00;
+    border: 2px solid gray;
+    transition-duration: .4s;
+}
+
+.topnav a:hover{
+    background-color: #dfef00;
+    text-decoration: overline;
+    border: 5px;
+    transform: translateY(30%);
+}
+
+.topnav a.active {
+    background-color: #70707e14;
+    color: white;
+    z-index: 99;
+  }
+.set1 {
+    border: 2px solid #d4ff00;
+    background-color: black;
+    font-size: xx-large;
+    color: #dfef00;
+    width: 40%;
+    padding: auto;
+    text-align: center;
+    margin: center;
+    transition-duration: .1s;
+}
+.set1:hover{
+    background-color: #d4ff00;
+    color: black;
+    transition-duration: 1s;
+
+}
+
+.no1 {
+    opacity: 0;
+    transition-duration: .7s;
+
+}
+
+.set1:hover + .no1{
+    opacity: 1;
+    color: rgb(246, 255, 0);
+    font-size: x-large;
+
+}
+
+.set1:hover .image{
+    display: block;
+}
+
+.box {
+    width: 90%;
+    height: 90%;
+    border: 15px solid rgb(212, 221, 129);
+    padding: 50px;
+    margin: 20px;
+}
+.spc {
+    margin-bottom: 100px;
+}
+
+footer {
+    color: grey;
+    font-size: xx-small;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+}
+.policy {
+    color: gray;
+    border: 2px solid yellow;
+    background-color: black;
+    padding: auto;
+    text-decoration: none;
+    margin-left: 90%;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition-duration: .3s;
+    font-size: x-small;
+
+}
+
+.policy:hover{
+    background-color: yellow;
+    color: black;
+    font-size: small;
+}
+.submitbtn{
+    color: yellow;
+    background-color: black;
+    padding: auto;
+    cursor: pointer;
+    border: 2px solid yellow;
+    transition-duration: .5s;
+    text-decoration: none;
+}
+.submitbtn:hover{
+    background-color: yellow;
+    color: black;
+}
+
+.box2 {
+    width: 80%;
+    height: 80%;
+    border: 5px solid rgb(122, 133, 125);
+    padding: 50px;
+    margin: 20px;
+    position: relative;
+    align-items: center;
+
+}
+
+
+input[type=text]{
+    border: 1px solid yellow;
+    color: yellow;
+    background-color: black;
+    border-radius: 5px;
+}
+input[type=email]{
+    border: 1px solid yellow;
+    color: yellow;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.inp{
+    border: 1px solid yellow;
+    color: yellow;
+    background-color: black;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+}
+textarea{
+    border: 1px solid yellow;
+    color: yellow;
+    background-color: black;
+    border-radius: 5px;
+}
+.column{
+    display: grid;
+    text-align: left;
+
+}
